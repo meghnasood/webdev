@@ -1,3 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,16 +11,47 @@ body {
 h1{
 	text-align: center;
 	font-size: 175%;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
-section{
-	font-size: 150%;
-}
-
-section > div {
+.content{
 	position: relative;
+	padding: 5px;
+	font-size: 150%;
+	background-color: gray;
+	border: 2px solid black;
+	margin: 5px;
+
+}
+
+p{
+	margin-top: 40px;
+}
+
+h3 {
+	position: absolute;
 	top: 0;
 	right: 0;
+	text-align: center;
+	margin: 0;
+	padding: 0px 20px 0px 20px;
+	border: 2px solid black;
+}
+
+#head1{
+	background-color: red;
+	color: white;
+}
+
+#head2{
+	background-color: blue;
+	color: white;
+}
+
+#head3{
+	background-color: green;
+	color: black;
 }
 
 @media (min-width: 992px){
@@ -63,7 +100,7 @@ section > div {
 @media (min-width: 768px) and (max-width: 991px){
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
 	.col-md-10, .col-md-11, .col-md-12 {
-		float: left;
+		float: left;	
 	}
 	.col-md-1 {
 		width: 8.33%;
